@@ -1,0 +1,33 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "This project is a fully Dockerized Node.js + Express blogging backend built on a MySQL master–slave replication architecture.",
+  "keywords": [
+    "Master",
+    "Slave",
+    "Node",
+    "Express",
+    "Backend",
+    "Docker"
+  ],
+  "homepage": "https://github.com/Tim-Alpha/blog-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Tim-Alpha/blog-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tim-Alpha/blog-backend.git"
+  },
+  "license": "ISC",
+  "author": "Sachin Kinha",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "replicate": "node replication-setup.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}
